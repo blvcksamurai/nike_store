@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../widgets/big_text.dart';
+import '../widgets/new_arrivals.dart';
 import '../widgets/tab_options.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -16,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xfffbfbfb),
       body: Container(
         margin: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
         child: ListView(
@@ -110,135 +111,31 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
             SizedBox(height: 25),
-            BigText(text: 'New Arrivals'),
-            SizedBox(height: 10),
-            Stack(
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Container(
-                  width: 289,
-                  height: 295,
-                  color: Colors.red,
-                ),
-                Container(
-                  margin: EdgeInsets.only(top: 30),
-                  width: 289,
-                  height: 281,
-                  child: Stack(
-                    children: [
-                      Container(
-                        width: 289,
-                        height: 245,
-                        clipBehavior: Clip.antiAlias,
-                        decoration: ShapeDecoration(
-                          color: Colors.white,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(16),
-                          ),
-                          shadows: [
-                            BoxShadow(
-                              color: Color(0x0C000000),
-                              blurRadius: 50,
-                              offset: Offset(0, 14),
-                              spreadRadius: 0,
-                            )
-                          ],
-                        ),
-                        child: Stack(
-                          children: [
-                            Positioned(
-                              left: 16,
-                              top: 152,
-                              child: Text(
-                                'Air Jordan 1 Elevate High',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 16,
-                                  fontFamily: 'Product Sans',
-                                  fontWeight: FontWeight.w400,
-                                  height: 0,
-                                ),
-                              ),
-                            ),
-                            Positioned(
-                              left: 16,
-                              top: 206,
-                              child: Container(
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      '\$ 12,067',
-                                      style: TextStyle(
-                                        color: Colors.black,
-                                        fontSize: 18,
-                                        fontFamily: 'Product Sans',
-                                        fontWeight: FontWeight.w700,
-                                        height: 0,
-                                      ),
-                                    ),
-                                    const SizedBox(width: 10),
-                                    Text(
-                                      '14% OFF',
-                                      style: TextStyle(
-                                        color: Color(0xFF219653),
-                                        fontSize: 14,
-                                        fontFamily: 'Product Sans',
-                                        fontWeight: FontWeight.w400,
-                                        height: 0,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Positioned(
-                              left: 16,
-                              top: 173,
-                              child: Text(
-                                'Women shoes',
-                                style: TextStyle(
-                                  color: Color(0xFF797979),
-                                  fontSize: 12,
-                                  fontFamily: 'Product Sans',
-                                  fontWeight: FontWeight.w400,
-                                  height: 0,
-                                ),
-                              ),
-                            ),
-                            Positioned(
-                              left: 219,
-                              top: 155,
-                              child: Text(
-                                '+4 Colours',
-                                style: TextStyle(
-                                  color: Color(0xFF2F80ED),
-                                  fontSize: 12,
-                                  fontFamily: 'Product Sans',
-                                  fontWeight: FontWeight.w400,
-                                  height: 0,
-                                ),
-                              ),
-                            ),
-                            Positioned(
-                                left: 225,
-                                top: 185,
-                                child:
-                                    SvgPicture.asset('assets/images/arrow.svg'))
-                          ],
-                        ),
-                      ),
-                      // assets/images/air_red.svg
-                    ],
+                BigText(text: 'New Arrivals'),
+                Text(
+                  'See all',
+                  textAlign: TextAlign.right,
+                  style: TextStyle(
+                    color: Color(0xFF2F80ED),
+                    fontSize: 14,
+                    fontFamily: 'Product Sans',
+                    fontWeight: FontWeight.w400,
+                    height: 0,
                   ),
-                ),
-                Positioned(
-                    right: 50.33,
-                    bottom: 80,
-                    child: SvgPicture.asset('assets/images/air_brown.svg'))
+                )
               ],
-            )
+            ),
+            SizedBox(height: 10),
+            NewArrivals(
+              discount: '14',
+              gender: 'Women',
+              image: 'assets/images/air_red.png',
+              name: 'Air Jordan 1 Elevate High',
+              price: '12,067',
+            ),
           ],
         ),
       ),
