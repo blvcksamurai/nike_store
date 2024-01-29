@@ -17,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-      backgroundColor: Color(0xfffbfbfb),
+      backgroundColor: Color(0xfff7f7f7),
       body: Container(
         margin: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
         child: ListView(
@@ -129,13 +129,28 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
             SizedBox(height: 10),
-            NewArrivals(
-              discount: '14',
-              gender: 'Women',
-              image: 'assets/images/air_red.png',
-              name: 'Air Jordan 1 Elevate High',
-              price: '12,067',
-            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  NewArrivals(
+                    discount: '14',
+                    gender: 'Women',
+                    image: 'assets/images/air_red.png',
+                    name: 'Air Jordan 1 Elevate High',
+                    price: '12,067',
+                  ),
+                  SizedBox(width: 25),
+                  NewArrivals(
+                    discount: '14',
+                    gender: 'Women',
+                    image: 'assets/images/air_red.png',
+                    name: 'Air Jordan 1 Elevate High',
+                    price: '12,067',
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),

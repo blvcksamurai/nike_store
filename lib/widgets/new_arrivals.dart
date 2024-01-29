@@ -15,7 +15,7 @@ class NewArrivals extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Container(width: 289, height: 295, color: Colors.transparent),
+        Container(width: 289, height: 295, color: Colors.red),
         Container(
           margin: EdgeInsets.only(top: 30),
           width: 289,
@@ -129,14 +129,11 @@ class NewArrivals extends StatelessWidget {
             ],
           ),
         ),
-        Positioned(
-            right: 20,
-            bottom: 40,
-            child: Image(
-              image: AssetImage(image),
-              height: 350,
-              width: 400,
-            ))
+        // Image(
+        //   image: AssetImage(image),
+        //   // height: 350,
+        //   // width: 400,
+        // )
       ],
     );
   }
