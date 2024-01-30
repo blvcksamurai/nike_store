@@ -1,6 +1,9 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../widgets/best_seller_item.dart';
 import '../widgets/big_text.dart';
 import '../widgets/new_arrivals.dart';
 import '../widgets/tab_options.dart';
@@ -128,7 +131,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 )
               ],
             ),
-            SizedBox(height: 10),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
@@ -140,17 +142,49 @@ class _HomeScreenState extends State<HomeScreen> {
                     name: 'Air Jordan 1 Elevate High',
                     price: '12,067',
                   ),
-                  SizedBox(width: 25),
+                  SizedBox(width: 20),
                   NewArrivals(
                     discount: '14',
                     gender: 'Women',
-                    image: 'assets/images/air_red.png',
+                    image: 'assets/images/nike_sb.png',
+                    name: "Nike Sb Low",
+                    price: '12,067',
+                  ),
+                  SizedBox(width: 20),
+                  NewArrivals(
+                    discount: '14',
+                    gender: 'Women',
+                    image: 'assets/images/air_brown.png',
                     name: 'Air Jordan 1 Elevate High',
                     price: '12,067',
                   ),
                 ],
               ),
-            )
+            ),
+            SizedBox(height: 20),
+            BigText(text: 'Best Sellers'),
+            SizedBox(height: 25),
+            BestSellersItem(
+              image: 'assets/images/air_mid.png',
+              gender: 'Women',
+              name: 'Air Jordan 1 Mid SE',
+              discount: '14',
+              price: '10,225',
+            ),
+            BestSellersItem(
+              image: 'assets/images/air_gba.png',
+              gender: 'Women',
+              name: 'Nike SB Low',
+              discount: '14',
+              price: '9,407',
+            ),
+            BestSellersItem(
+              image: 'assets/images/air_gba.png',
+              gender: 'Women',
+              name: "Air Force 1's",
+              discount: '14',
+              price: '7,142',
+            ),
           ],
         ),
       ),
