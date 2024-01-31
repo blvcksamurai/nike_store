@@ -158,6 +158,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     name: 'Air Jordan 1 Elevate High',
                     price: '12,067',
                   ),
+                  NewArrivals(
+                    discount: '14',
+                    gender: 'Women',
+                    image: 'assets/images/air_brown.png',
+                    name: 'Air Jordan 1 Elevate High',
+                    price: '12,067',
+                  ),
                 ],
               ),
             ),
