@@ -164,6 +164,9 @@ class _HomeScreenState extends State<HomeScreen> {
             SizedBox(height: 20),
             BigText(text: 'Best Sellers'),
             SizedBox(height: 25),
+            SizedBox(height: 20),
+            BigText(text: 'Best Sellers'),
+            SizedBox(height: 25),
             BestSellersItem(
               image: 'assets/images/air_mid.png',
               gender: 'Women',
