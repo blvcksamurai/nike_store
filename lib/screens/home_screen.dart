@@ -128,6 +128,18 @@ class _HomeScreenState extends State<HomeScreen> {
                     fontWeight: FontWeight.w400,
                     height: 0,
                   ),
+                ),
+                BigText(text: 'New Arrivals'),
+                Text(
+                  'See all',
+                  textAlign: TextAlign.right,
+                  style: TextStyle(
+                    color: Color(0xFF2F80ED),
+                    fontSize: 14,
+                    fontFamily: 'Product Sans',
+                    fontWeight: FontWeight.w400,
+                    height: 0,
+                  ),
                 )
               ],
             ),
