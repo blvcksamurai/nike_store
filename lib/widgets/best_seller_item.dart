@@ -77,17 +77,12 @@ class BestSellersItem extends StatelessWidget {
                         style: TextStyle(
                           color: Color(0xFF2C2C2C),
                           fontSize: 12,
-                          
                           fontFamily: 'Product Sans',
                           fontWeight: FontWeight.w400,
                           height: 0,
                         ),
                       ),
                       SvgPicture.asset('assets/images/rating.svg')
-                                            SvgPicture.asset('assets/images/rating.svg')
-
-
-
                     ],
                   ),
                   Row(
