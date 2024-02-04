@@ -198,6 +198,12 @@ class _HomeScreenState extends State<HomeScreen> {
               name: "Air Force 1's",
               discount: '14',
               price: '7,142',
+            ),BestSellersItem(
+              image: 'assets/images/air_gba.png',
+              gender: 'Women',
+              name: "Air Force 1's",
+              discount: '14',
+              price: '7,142',
             ),
           ],
         ),
