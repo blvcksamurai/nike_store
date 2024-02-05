@@ -107,6 +107,10 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
+                TabOptions(text: 'Running'),
+                TabOptions(text: 'Jordans'),
+                TabOptions(text: 'Sneakers'),
+                TabOptions(text: 'Football')
               ],
             ),
             SizedBox(height: 25),
