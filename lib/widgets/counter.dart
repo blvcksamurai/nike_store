@@ -46,6 +46,15 @@ class _CounterScreenState extends State<CounterScreen> {
             ),
           ),
         ),
+        IconButton(
+          onPressed: _incrementCounter,
+          icon: Icon(
+            Icons.add_circle_outline,
+            color: Colors.black,
+            weight: 0.1,
+            size: 30,
+          ),
+        ),
       ],
     );
   }
