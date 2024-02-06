@@ -242,7 +242,7 @@ class ShowScreen extends StatelessWidget {
                                         height: 0,
                                       ),
                                     ),
-                                    // CounterScreen()
+                                    CounterScreen()
                                   ],
                                 ),
                               )
