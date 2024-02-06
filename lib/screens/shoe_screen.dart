@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:nike_store_app/widgets/counter.dart';
 
 import '../widgets/kick_picker.dart';
 
@@ -12,29 +13,32 @@ class ShowScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Color(0xffffffff),
         body: Container(
-          margin: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+          margin: EdgeInsets.symmetric(vertical: 20, horizontal: 0),
           child: ListView(
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Icon(Icons.arrow_back_ios),
-                  Row(
-                    children: [
-                      SvgPicture.asset(
-                        'assets/images/heart.svg',
-                        height: 24,
-                        width: 24,
-                      ),
-                      SizedBox(width: 20),
-                      SvgPicture.asset(
-                        'assets/images/bag22.svg',
-                        height: 24,
-                        width: 24,
-                      ),
-                    ],
-                  )
-                ],
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Icon(Icons.arrow_back_ios),
+                    Row(
+                      children: [
+                        SvgPicture.asset(
+                          'assets/images/heart.svg',
+                          height: 24,
+                          width: 24,
+                        ),
+                        SizedBox(width: 20),
+                        SvgPicture.asset(
+                          'assets/images/bag22.svg',
+                          height: 24,
+                          width: 24,
+                        ),
+                      ],
+                    )
+                  ],
+                ),
               ),
               Container(
                 width: 227,
@@ -90,6 +94,7 @@ class ShowScreen extends StatelessWidget {
               Container(
                 width: 451.76,
                 height: 423.64,
+                margin: EdgeInsets.only(left: 10),
                 child: Stack(
                   children: [
                     Positioned(
@@ -173,6 +178,79 @@ class ShowScreen extends StatelessWidget {
                     ),
                   ],
                 ),
+              ),
+              Stack(
+                children: [
+                  Container(
+                    height: 220,
+                    width: 420,
+                    color: Colors.white,
+                  ),
+                  Container(
+                      margin:
+                          EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                      child: Row(
+                        children: [
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                margin: EdgeInsets.symmetric(vertical: 30),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'UK 4',
+                                      style: TextStyle(
+                                        color: Color(0xFF828282),
+                                        fontSize: 16,
+                                        fontFamily: 'Product Sans',
+                                        fontWeight: FontWeight.w400,
+                                        height: 0,
+                                      ),
+                                    ),
+                                    const SizedBox(width: 36),
+                                    Text(
+                                      'UK 4.5',
+                                      style: TextStyle(
+                                        color: Color(0xFF828282),
+                                        fontSize: 16,
+                                        fontFamily: 'Product Sans',
+                                        fontWeight: FontWeight.w400,
+                                        height: 0,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Container(
+                                margin: EdgeInsets.only(top: 20),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Qty',
+                                      style: TextStyle(
+                                        color: Color(0xFFBDBDBD),
+                                        fontSize: 16,
+                                        fontFamily: 'Product Sans',
+                                        fontWeight: FontWeight.w400,
+                                        height: 0,
+                                      ),
+                                    ),
+                                    // CounterScreen()
+                                  ],
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      ))
+                ],
               )
             ],
           ),
