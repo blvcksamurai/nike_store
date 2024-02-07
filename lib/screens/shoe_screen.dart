@@ -118,7 +118,7 @@ class ShowScreen extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      right: 15,
+                      right: 55,
                       top: 69.42,
                       child: Transform(
                         transform: Matrix4.identity()
