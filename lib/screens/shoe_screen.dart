@@ -170,8 +170,6 @@ class ShowScreen extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               KickPicker(image: 'assets/images/s1.png'),
-                              KickPicker(image: 'assets/images/s1.png'),
-                              KickPicker(image: 'assets/images/s1.png'),
                               KickPicker(image: 'assets/images/s2.png'),
                               KickPicker(image: 'assets/images/s3.png'),
                               KickPicker(image: 'assets/images/s4.png'),
