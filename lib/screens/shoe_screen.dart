@@ -73,24 +73,24 @@ class ShowScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              // Row(
-              //   children: [
-              //     Container(
-              //       width: 50,
-              //       height: 250,
-              //       child: Column(
-              //           mainAxisSize: MainAxisSize.min,
-              //           mainAxisAlignment: MainAxisAlignment.start,
-              //           crossAxisAlignment: CrossAxisAlignment.start,
-              //           children: [
-              //             KickPicker(image: 'assets/images/s1.png'),
-              //             KickPicker(image: 'assets/images/s2.png'),
-              //             KickPicker(image: 'assets/images/s3.png'),
-              //             KickPicker(image: 'assets/images/s4.png'),
-              //           ]),
-              //     ),
-              //                     ],
-              // )
+              Row(
+                children: [
+                  Container(
+                    width: 50,
+                    height: 250,
+                    child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          KickPicker(image: 'assets/images/s1.png'),
+                          KickPicker(image: 'assets/images/s2.png'),
+                          KickPicker(image: 'assets/images/s3.png'),
+                          KickPicker(image: 'assets/images/s4.png'),
+                        ]),
+                  ),
+                ],
+              ),
               Container(
                 width: 451.76,
                 height: 423.64,
