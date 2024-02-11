@@ -144,20 +144,20 @@ class ShowScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Positioned(
-                      left: 75,
-                      top: 361,
-                      child: Container(
-                        width: 290,
-                        height: 54,
-                        decoration: ShapeDecoration(
-                          shape: OvalBorder(
-                            side: BorderSide(
-                                width: 1.70, color: Color(0xFFBDBDBD)),
-                          ),
-                        ),
-                      ),
-                    ),
+                    // Positioned(
+                    //   left: 75,
+                    //   top: 361,
+                    //   child: Container(
+                    //     width: 290,
+                    //     height: 54,
+                    //     decoration: ShapeDecoration(
+                    //       shape: OvalBorder(
+                    //         side: BorderSide(
+                    //             width: 1.70, color: Color(0xFFBDBDBD)),
+                    //       ),
+                    //     ),
+                    //   ),
+                    // ),
                     Positioned(
                       left: 10,
                       top: 33,
