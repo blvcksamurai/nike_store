@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:nike_store_app/widgets/counter.dart';
@@ -190,6 +192,7 @@ class ShowScreen extends StatelessWidget {
                       margin:
                           EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Column(
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -247,7 +250,95 @@ class ShowScreen extends StatelessWidget {
                                 ),
                               )
                             ],
-                          )
+                          ),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              Container(
+                                margin: EdgeInsets.symmetric(vertical: 30),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'UK 5.5',
+                                      style: TextStyle(
+                                        color: Color(0xFF828282),
+                                        fontSize: 16,
+                                        fontFamily: 'Product Sans',
+                                        fontWeight: FontWeight.w400,
+                                        height: 0,
+                                      ),
+                                    ),
+                                    const SizedBox(width: 36),
+                                    Text(
+                                      'UK 6.0',
+                                      style: TextStyle(
+                                        color: Color(0xFF828282),
+                                        fontSize: 16,
+                                        fontFamily: 'Product Sans',
+                                        fontWeight: FontWeight.w400,
+                                        height: 0,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Container(
+                                width: 111,
+                                height: 83,
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                      left: 5,
+                                      top: 32,
+                                      child: Text(
+                                        'Rs. 12,067',
+                                        style: TextStyle(
+                                          color: Color(0xFF090909),
+                                          fontSize: 24,
+                                          fontFamily: 'Product Sans',
+                                          fontWeight: FontWeight.w700,
+                                          height: 0,
+                                        ),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      left: 56,
+                                      top: 66,
+                                      child: Text(
+                                        '14% OFF',
+                                        style: TextStyle(
+                                          color: Color(0xFF219653),
+                                          fontSize: 14,
+                                          fontFamily: 'Product Sans',
+                                          fontWeight: FontWeight.w400,
+                                          height: 0,
+                                        ),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      left: 75,
+                                      top: 0,
+                                      child: Text(
+                                        'Price',
+                                        textAlign: TextAlign.right,
+                                        style: TextStyle(
+                                          color: Color(0xFFBDBDBD),
+                                          fontSize: 16,
+                                          fontFamily: 'Product Sans',
+                                          fontWeight: FontWeight.w400,
+                                          height: 0,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
                         ],
                       ))
                 ],
