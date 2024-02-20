@@ -305,20 +305,20 @@ class ShowScreen extends StatelessWidget {
                                         ),
                                       ),
                                     ),
-                                    // Positioned(
-                                    //   left: 56,
-                                    //   top: 66,
-                                    //   child: Text(
-                                    //     '14% OFF',
-                                    //     style: TextStyle(
-                                    //       color: Color(0xFF219653),
-                                    //       fontSize: 14,
-                                    //       fontFamily: 'Product Sans',
-                                    //       fontWeight: FontWeight.w400,
-                                    //       height: 0,
-                                    //     ),
-                                    //   ),
-                                    // ),
+                                    Positioned(
+                                      left: 56,
+                                      top: 66,
+                                      child: Text(
+                                        '14% OFF',
+                                        style: TextStyle(
+                                          color: Color(0xFF219653),
+                                          fontSize: 14,
+                                          fontFamily: 'Product Sans',
+                                          fontWeight: FontWeight.w400,
+                                          height: 0,
+                                        ),
+                                      ),
+                                    ),
                                     Positioned(
                                       left: 75,
                                       top: 0,
