@@ -235,16 +235,16 @@ class ShowScreen extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    // Text(
-                                    //   'Qty',
-                                    //   style: TextStyle(
-                                    //     color: Color(0xFFBDBDBD),
-                                    //     fontSize: 16,
-                                    //     fontFamily: 'Product Sans',
-                                    //     fontWeight: FontWeight.w400,
-                                    //     height: 0,
-                                    //   ),
-                                    // ),
+                                    Text(
+                                      'Qty',
+                                      style: TextStyle(
+                                        color: Color(0xFFBDBDBD),
+                                        fontSize: 16,
+                                        fontFamily: 'Product Sans',
+                                        fontWeight: FontWeight.w400,
+                                        height: 0,
+                                      ),
+                                    ),
                                     CounterScreen()
                                   ],
                                 ),
